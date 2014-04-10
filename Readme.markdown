@@ -21,4 +21,25 @@ It also has convenience setters for a few common tasks:
 
 That's it. Awesome right?
 
+There's also a handy `backgroundView` property. You can put whatever you want there. Let's say you have a gradient view. Do something like this:
+
+```objc
+CMDAwesomeButton *gradientButton = [CMDAwesomeButton new];
+
+SAMgradientView *gradientView = [SAMGradientView new];
+gradientView.backgroundColor = [UIColor clearColor];
+gradientButton.backgroundView = gradientView;
+
+[button setValue:@[
+    [UIColor colorWithRed:0.145 green:0.769 blue:0.757 alpha:1.000],
+    [UIColor colorWithRed:0.196 green:0.678 blue:0.800 alpha:1.000]
+] forKeyPath:@"backgroundView.gradientColors" state:UIControlStateNormal];
+[button setValue:@[
+    [UIColor colorWithRed:0.145 green:0.769 blue:0.757 alpha:0.5],
+    [UIColor colorWithRed:0.196 green:0.678 blue:0.800 alpha:0.5]
+] forKeyPath:@"backgroundView.gradientColors" state:UIControlStateHighlighted];
+```
+
+Boom. ([SAMGradientView](https://github.com/soffes/SAMGradientView) is great. I use it in all my apps.)
+
 If you would like more convineince setters feel free to send me a pull request!
