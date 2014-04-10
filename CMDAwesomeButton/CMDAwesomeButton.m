@@ -113,6 +113,7 @@
 - (void)setBackgroundView:(UIView *)view {
     [_backgroundView removeFromSuperview];
     _backgroundView = view;
+    _backgroundView.userInteractionEnabled = NO;
     [self insertSubview:_backgroundView atIndex:0];
     [self setNeedsLayout];
 }
