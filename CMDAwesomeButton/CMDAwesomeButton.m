@@ -47,12 +47,6 @@
 }
 
 
-- (id)valueForKeyPath:(NSString *)keyPath controlState:(UIControlState)state {
-    NSMutableDictionary *storage = [self storageForControlState:state];
-    return storage[keyPath];
-}
-
-
 - (void)setBackgroundColor:(UIColor *)color forControlState:(UIControlState)state {
     [self setValue:color forKeyPath:@"backgroundColor" controlState:state];
 }
