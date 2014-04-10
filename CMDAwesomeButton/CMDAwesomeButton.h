@@ -8,6 +8,8 @@
 
 @interface CMDAwesomeButton : UIButton
 
+@property (nonatomic) UIView *backgroundView;
+
 #pragma mark - General methods
 
 - (void)setValue:(id)value forKeyPath:(NSString *)keyPath state:(UIControlState)state;

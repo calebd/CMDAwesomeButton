@@ -18,6 +18,14 @@
 
 @synthesize storage = _storage;
 
+#pragma mark - UIView
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.backgroundView.frame = self.bounds;
+}
+
+
 #pragma mark - UIControl
 
 - (void)setHighlighted:(BOOL)highlighted {
@@ -99,6 +107,14 @@
         _storage = [NSMutableDictionary new];
     }
     return _storage;
+}
+
+
+- (void)setBackgroundView:(UIView *)view {
+    [_backgroundView removeFromSuperview];
+    _backgroundView = view;
+    [self insertSubview:_backgroundView atIndex:0];
+    [self setNeedsLayout];
 }
 
 @end
