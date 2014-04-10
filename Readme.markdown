@@ -20,3 +20,5 @@ It also has convenience setters for a few common tasks:
 ```
 
 That's it. Awesome right?
+
+If you would like more convineince setters feel free to send me a pull request!
