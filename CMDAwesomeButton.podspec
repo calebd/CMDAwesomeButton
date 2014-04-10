@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'CMDAwesomeButton'
   s.version      = '0.1.0'
-  s.summary      = 'Easy share sheets on iOS.'
+  s.summary      = 'A UIButton subclass that is awesome.'
   s.homepage     = 'https://github.com/calebd/CMDAwesomeButton'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Caleb Davenport' => 'calebmdavenport@gmail.com' }
