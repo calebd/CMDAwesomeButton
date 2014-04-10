@@ -40,30 +40,30 @@
 
 #pragma mark - Public
 
-- (void)setValue:(id)value forKeyPath:(NSString *)keyPath controlState:(UIControlState)state {
+- (void)setValue:(id)value forKeyPath:(NSString *)keyPath state:(UIControlState)state {
     NSMutableDictionary *storage = [self storageForControlState:state];
     storage[keyPath] = value;
     [self applyStorageForCurrentState];
 }
 
 
-- (void)setBackgroundColor:(UIColor *)color forControlState:(UIControlState)state {
-    [self setValue:color forKeyPath:@"backgroundColor" controlState:state];
+- (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state {
+    [self setValue:color forKeyPath:@"backgroundColor" state:state];
 }
 
 
-- (void)setBorderColor:(UIColor *)color forControlState:(UIControlState)state {
-    [self setValue:(id)[color CGColor] forKeyPath:@"layer.borderColor" controlState:state];
+- (void)setBorderColor:(UIColor *)color forState:(UIControlState)state {
+    [self setValue:(id)[color CGColor] forKeyPath:@"layer.borderColor" state:state];
 }
 
 
-- (void)setBorderWidth:(CGFloat)width forControlState:(UIControlState)state {
-    [self setValue:@(width) forKeyPath:@"layer.borderWidth" controlState:state];
+- (void)setBorderWidth:(CGFloat)width forState:(UIControlState)state {
+    [self setValue:@(width) forKeyPath:@"layer.borderWidth" state:state];
 }
 
 
-- (void)setCornerRadius:(CGFloat)radius forControlState:(UIControlState)state {
-    [self setValue:@(radius) forKeyPath:@"layer.cornerRadius" controlState:state];
+- (void)setCornerRadius:(CGFloat)radius forState:(UIControlState)state {
+    [self setValue:@(radius) forKeyPath:@"layer.cornerRadius" state:state];
 }
 
 
