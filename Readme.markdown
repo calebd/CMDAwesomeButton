@@ -30,11 +30,11 @@ SAMgradientView *gradientView = [SAMGradientView new];
 gradientView.backgroundColor = [UIColor clearColor];
 gradientButton.backgroundView = gradientView;
 
-[button setValue:@[
+[gradientButton setValue:@[
     [UIColor colorWithRed:0.145 green:0.769 blue:0.757 alpha:1.000],
     [UIColor colorWithRed:0.196 green:0.678 blue:0.800 alpha:1.000]
 ] forKeyPath:@"backgroundView.gradientColors" state:UIControlStateNormal];
-[button setValue:@[
+[gradientButton setValue:@[
     [UIColor colorWithRed:0.145 green:0.769 blue:0.757 alpha:0.5],
     [UIColor colorWithRed:0.196 green:0.678 blue:0.800 alpha:0.5]
 ] forKeyPath:@"backgroundView.gradientColors" state:UIControlStateHighlighted];
