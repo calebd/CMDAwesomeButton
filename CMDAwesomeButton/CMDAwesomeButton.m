@@ -16,7 +16,8 @@
 
 @implementation CMDAwesomeButton
 
-@synthesize storage = _storage;
+@synthesize storage = _cmd_storage;
+@synthesize backgroundView = _cmd_backgroundView;
 
 #pragma mark - UIView
 
@@ -103,18 +104,18 @@
 #pragma mark - Accessors
 
 - (NSMutableDictionary *)storage {
-    if (!_storage) {
-        _storage = [NSMutableDictionary new];
+    if (!_cmd_storage) {
+        _cmd_storage = [NSMutableDictionary new];
     }
-    return _storage;
+    return _cmd_storage;
 }
 
 
 - (void)setBackgroundView:(UIView *)view {
-    [_backgroundView removeFromSuperview];
-    _backgroundView = view;
-    _backgroundView.userInteractionEnabled = NO;
-    [self insertSubview:_backgroundView atIndex:0];
+    [_cmd_backgroundView removeFromSuperview];
+    _cmd_backgroundView = view;
+    _cmd_backgroundView.userInteractionEnabled = NO;
+    [self insertSubview:_cmd_backgroundView atIndex:0];
     [self setNeedsLayout];
 }
 
