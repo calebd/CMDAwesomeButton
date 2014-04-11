@@ -42,4 +42,4 @@ gradientButton.backgroundView = gradientView;
 
 Boom. ([SAMGradientView](https://github.com/soffes/SAMGradientView) is great. I use it in all my apps.)
 
-If you would like more convineince setters feel free to send me a pull request!
+If you would like more convenience setters feel free to send me a pull request!
