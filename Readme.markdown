@@ -13,13 +13,13 @@ This lets you set any value for any keypath for the given control state.
 It also has convenience setters for a few common tasks:
 
 ```objc
-- (void)setBackgroundColor:(UIColor *)color forControlState:(UIControlState)state;
-- (void)setBorderColor:(UIColor *)color forControlState:(UIControlState)state;
-- (void)setBorderWidth:(CGFloat)width forControlState:(UIControlState)state;
-- (void)setCornerRadius:(CGFloat)radius forControlState:(UIControlState)state;
+- (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state;
+- (void)setBorderColor:(UIColor *)color forState:(UIControlState)state;
+- (void)setBorderWidth:(CGFloat)width forState:(UIControlState)state;
+- (void)setCornerRadius:(CGFloat)radius forState:(UIControlState)state;
 ```
 
-That's it. Awesome right?
+Awesome right?
 
 There's also a handy `backgroundView` property. You can put whatever you want there. Let's say you have a gradient view. Do something like this:
 
