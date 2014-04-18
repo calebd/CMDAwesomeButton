@@ -5,7 +5,7 @@ This is my button subclass. It is awesome.
 It is powered by one method:
 
 ```objc
-- (void)setValue:(id)value forKeyPath:(NSString *)keyPath controlState:(UIControlState)state;
+- (void)setValue:(id)value forKeyPath:(NSString *)keyPath state:(UIControlState)state;
 ```
 
 This lets you set any value for any keypath for the given control state.
