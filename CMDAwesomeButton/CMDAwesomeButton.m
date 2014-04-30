@@ -66,6 +66,11 @@
 }
 
 
+- (void)setTintColor:(UIColor *)color forState:(UIControlState)state {
+    [self setValue:color forKeyPath:@"tintColor" state:state];
+}
+
+
 - (void)setBorderWidth:(CGFloat)width forState:(UIControlState)state {
     [self setValue:@(width) forKeyPath:@"layer.borderWidth" state:state];
 }
