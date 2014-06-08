@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'CMDAwesomeButton'
-  s.version      = '0.1.0'
+  s.version      = '0.1.1'
   s.summary      = 'A UIButton subclass that is awesome.'
   s.homepage     = 'https://github.com/calebd/CMDAwesomeButton'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
