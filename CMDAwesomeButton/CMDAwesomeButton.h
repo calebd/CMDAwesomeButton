@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
+@import UIKit;
+
 @interface CMDAwesomeButton : UIButton
 
 @property (nonatomic) UIView *backgroundView;
