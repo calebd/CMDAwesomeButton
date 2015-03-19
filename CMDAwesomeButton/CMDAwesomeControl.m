@@ -54,6 +54,26 @@
     [self applyStorageForCurrentState];
 }
 
+- (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state {
+    [self setValue:color forKeyPath:@"backgroundColor" state:state];
+}
+
+- (void)setBorderColor:(UIColor *)color forState:(UIControlState)state {
+    [self setValue:(id)[color CGColor] forKeyPath:@"layer.borderColor" state:state];
+}
+
+- (void)setTintColor:(UIColor *)color forState:(UIControlState)state {
+    [self setValue:color forKeyPath:@"tintColor" state:state];
+}
+
+- (void)setBorderWidth:(CGFloat)width forState:(UIControlState)state {
+    [self setValue:@(width) forKeyPath:@"layer.borderWidth" state:state];
+}
+
+- (void)setCornerRadius:(CGFloat)radius forState:(UIControlState)state {
+    [self setValue:@(radius) forKeyPath:@"layer.cornerRadius" state:state];
+}
+
 
 #pragma mark - Private
 

@@ -10,6 +10,16 @@
 
 @interface CMDAwesomeControl : UIControl
 
+#pragma mark - General methods
+
 - (void)setValue:(id)value forKeyPath:(NSString *)keyPath state:(UIControlState)state;
+
+#pragma mark - Convenience methods
+
+- (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state;
+- (void)setBorderColor:(UIColor *)color forState:(UIControlState)state;
+- (void)setTintColor:(UIColor *)color forState:(UIControlState)state;
+- (void)setBorderWidth:(CGFloat)width forState:(UIControlState)state;
+- (void)setCornerRadius:(CGFloat)radius forState:(UIControlState)state;
 
 @end

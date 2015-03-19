@@ -16,8 +16,26 @@
 
 @implementation CMDAwesomeButton
 
+#pragma mark - Properties
+
 @synthesize storage = _cmd_storage;
 @synthesize backgroundView = _cmd_backgroundView;
+
+- (NSMutableDictionary *)storage {
+    if (!_cmd_storage) {
+        _cmd_storage = [NSMutableDictionary new];
+    }
+    return _cmd_storage;
+}
+
+- (void)setBackgroundView:(UIView *)view {
+    [_cmd_backgroundView removeFromSuperview];
+    _cmd_backgroundView = view;
+    _cmd_backgroundView.userInteractionEnabled = NO;
+    [self insertSubview:_cmd_backgroundView atIndex:0];
+    [self setNeedsLayout];
+}
+
 
 #pragma mark - UIView
 
@@ -34,12 +52,10 @@
     [self applyStorageForCurrentState];
 }
 
-
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     [self applyStorageForCurrentState];
 }
-
 
 - (void)setEnabled:(BOOL)enabled {
     [super setEnabled:enabled];
@@ -55,26 +71,21 @@
     [self applyStorageForCurrentState];
 }
 
-
 - (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state {
     [self setValue:color forKeyPath:@"backgroundColor" state:state];
 }
-
 
 - (void)setBorderColor:(UIColor *)color forState:(UIControlState)state {
     [self setValue:(id)[color CGColor] forKeyPath:@"layer.borderColor" state:state];
 }
 
-
 - (void)setTintColor:(UIColor *)color forState:(UIControlState)state {
     [self setValue:color forKeyPath:@"tintColor" state:state];
 }
 
-
 - (void)setBorderWidth:(CGFloat)width forState:(UIControlState)state {
     [self setValue:@(width) forKeyPath:@"layer.borderWidth" state:state];
 }
-
 
 - (void)setCornerRadius:(CGFloat)radius forState:(UIControlState)state {
     [self setValue:@(radius) forKeyPath:@"layer.cornerRadius" state:state];
@@ -93,7 +104,6 @@
     return dictionary;
 }
 
-
 - (void)applyStorageForCurrentState {
     NSDictionary *defaultStateStorage = [self storageForControlState:UIControlStateNormal];
     NSDictionary *currentStateStorage = [self storageForControlState:self.state];
@@ -103,25 +113,6 @@
     [mergedStorage enumerateKeysAndObjectsUsingBlock:^(NSString *key, id object, BOOL *stop) {
         [self setValue:object forKeyPath:key];
     }];
-}
-
-
-#pragma mark - Accessors
-
-- (NSMutableDictionary *)storage {
-    if (!_cmd_storage) {
-        _cmd_storage = [NSMutableDictionary new];
-    }
-    return _cmd_storage;
-}
-
-
-- (void)setBackgroundView:(UIView *)view {
-    [_cmd_backgroundView removeFromSuperview];
-    _cmd_backgroundView = view;
-    _cmd_backgroundView.userInteractionEnabled = NO;
-    [self insertSubview:_cmd_backgroundView atIndex:0];
-    [self setNeedsLayout];
 }
 
 @end
