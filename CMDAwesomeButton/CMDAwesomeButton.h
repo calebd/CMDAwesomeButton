@@ -6,9 +6,26 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
-@import UIKit;
+
+#if defined(__has_feature) && __has_feature(modules)
+    @import UIKit;
+#else
+    #import <UIKit/UIKit.h>
+#endif
+#import <CMDAwesomeButton/CMDAwesomeControl.h>
+
+#ifndef CMDAWESOMEBUTTON_FRAMEWORK
+#define CMDAWESOMEBUTTON_FRAMEWORK 0
+#endif
+
+#if CMDAWESOMEBUTTON_FRAMEWORK
+FOUNDATION_EXPORT double CMDAwesomeButtonVersionNumber;
+FOUNDATION_EXPORT const unsigned char CMDAwesomeButtonVersionString[];
+#endif
 
 @interface CMDAwesomeButton : UIButton
+
+#pragma mark - Properties
 
 @property (nonatomic) UIView *backgroundView;
 

@@ -6,7 +6,11 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
-@import UIKit;
+#if defined(__has_feature) && __has_feature(modules)
+    @import UIKit;
+#else
+    #import <UIKit/UIKit.h>
+#endif
 
 @interface CMDAwesomeControl : UIControl
 
