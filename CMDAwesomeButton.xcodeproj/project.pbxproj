@@ -38,11 +38,7 @@
 		3AECCDD21BE2946E0020E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AECCDD61BE294740020E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AECCDDD1BE296150020E58D /* CMDAwesomeButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMDAwesomeButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AECCDDF1BE296150020E58D /* CMDAwesomeButton tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMDAwesomeButton tvOS.h"; sourceTree = "<group>"; };
-		3AECCDE11BE296150020E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AECCDE61BE296150020E58D /* CMDAwesomeButton tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CMDAwesomeButton tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AECCDEB1BE296150020E58D /* CMDAwesomeButton_tvOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDAwesomeButton_tvOSTests.m; sourceTree = "<group>"; };
-		3AECCDED1BE296150020E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AECCDF51BE297390020E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AECCDF61BE297460020E58D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B5DAB5019BA62DF006A77FB /* CMDAwesomeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDAwesomeButton.h; sourceTree = "<group>"; };
@@ -138,31 +134,11 @@
 			path = tvOS;
 			sourceTree = "<group>";
 		};
-		3AECCDDE1BE296150020E58D /* CMDAwesomeButton tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				3AECCDDF1BE296150020E58D /* CMDAwesomeButton tvOS.h */,
-				3AECCDE11BE296150020E58D /* Info.plist */,
-			);
-			path = "CMDAwesomeButton tvOS";
-			sourceTree = "<group>";
-		};
-		3AECCDEA1BE296150020E58D /* CMDAwesomeButton tvOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				3AECCDEB1BE296150020E58D /* CMDAwesomeButton_tvOSTests.m */,
-				3AECCDED1BE296150020E58D /* Info.plist */,
-			);
-			path = "CMDAwesomeButton tvOSTests";
-			sourceTree = "<group>";
-		};
 		3B5DAB4419BA62DF006A77FB = {
 			isa = PBXGroup;
 			children = (
 				3B5DAB4F19BA62DF006A77FB /* CMDAwesomeButton */,
 				3BEEAD281B40DB2E0056E0E4 /* Tests */,
-				3AECCDDE1BE296150020E58D /* CMDAwesomeButton tvOS */,
-				3AECCDEA1BE296150020E58D /* CMDAwesomeButton tvOSTests */,
 				3B5DAB4E19BA62DF006A77FB /* Products */,
 			);
 			sourceTree = "<group>";
