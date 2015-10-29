@@ -490,6 +490,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DCMDAWESOMEBUTTON_FRAMEWORK=1";
 				SDKROOT = iphoneos;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -528,6 +529,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DCMDAWESOMEBUTTON_FRAMEWORK=1";
 				SDKROOT = iphoneos;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -547,7 +549,6 @@
 				INFOPLIST_FILE = CMDAwesomeButton/Configuration/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "-DCMDAWESOMEBUTTON_FRAMEWORK=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CMDAwesomeButton;
 				SKIP_INSTALL = YES;
@@ -565,7 +566,6 @@
 				INFOPLIST_FILE = CMDAwesomeButton/Configuration/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "-DCMDAWESOMEBUTTON_FRAMEWORK=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CMDAwesomeButton;
 				SKIP_INSTALL = YES;
