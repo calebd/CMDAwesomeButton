@@ -15,8 +15,22 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3BEEAD191B40DB2E0056E0E4"
-               BuildableName = "CMDAwesomeButton iOS.framework"
+               BuildableName = "CMDAwesomeButton.framework"
                BlueprintName = "CMDAwesomeButton iOS"
+               ReferencedContainer = "container:CMDAwesomeButton.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BEEAD231B40DB2E0056E0E4"
+               BuildableName = "CMDAwesomeButton iOS Tests.xctest"
+               BlueprintName = "CMDAwesomeButton iOS Tests"
                ReferencedContainer = "container:CMDAwesomeButton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +42,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3BEEAD231B40DB2E0056E0E4"
+               BuildableName = "CMDAwesomeButton iOS Tests.xctest"
+               BlueprintName = "CMDAwesomeButton iOS Tests"
+               ReferencedContainer = "container:CMDAwesomeButton.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3BEEAD191B40DB2E0056E0E4"
+            BuildableName = "CMDAwesomeButton.framework"
+            BlueprintName = "CMDAwesomeButton iOS"
+            ReferencedContainer = "container:CMDAwesomeButton.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BEEAD191B40DB2E0056E0E4"
-            BuildableName = "CMDAwesomeButton iOS.framework"
+            BuildableName = "CMDAwesomeButton.framework"
             BlueprintName = "CMDAwesomeButton iOS"
             ReferencedContainer = "container:CMDAwesomeButton.xcodeproj">
          </BuildableReference>
@@ -64,7 +97,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BEEAD191B40DB2E0056E0E4"
-            BuildableName = "CMDAwesomeButton iOS.framework"
+            BuildableName = "CMDAwesomeButton.framework"
             BlueprintName = "CMDAwesomeButton iOS"
             ReferencedContainer = "container:CMDAwesomeButton.xcodeproj">
          </BuildableReference>
